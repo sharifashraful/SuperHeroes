@@ -8,7 +8,7 @@ import {
 
 export const fetchSuperHeroes = ( ) => {
   return {
-    type: 'SUPERHEROES_FETCH'	
+    type: SUPERHEROES_FETCH	
   }  
 }
 

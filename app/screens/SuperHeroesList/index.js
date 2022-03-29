@@ -1,14 +1,8 @@
 import React, { useEffect } from 'react';
-import { View, Text, FlatList } from 'react-native';
+import { FlatList } from 'react-native';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchSuperHeroes } from '../../store/actions/superHeroesListActions'
-
-
-const Item = ({ alterEgo }) => (
-  <View>
-    <Text>{alterEgo}</Text>
-  </View>
-);
+import { fetchSuperHeroes } from '../../store/actions/superHeroesListActions';
+import SuperheroCard from '../../components/SuperheroCard';
 
 const SuperHeroesList = (props) => {
 	const superHeroesListReducer = useSelector((state) => state.superHeroesListReducer);
@@ -20,17 +14,9 @@ const SuperHeroesList = (props) => {
     dispatch(fetchSuperHeroesAction)
 	}, []);
 
-  useEffect(() => {
-    
-
-
-
-  }, [superHeroesList]);
-
   const renderItem = ({ item }) => (
-    <Item alterEgo={item.alterEgo} />
+    <SuperheroCard alterEgo={item.alterEgo} />
   );
-
 
   return (
     <FlatList

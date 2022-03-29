@@ -15,7 +15,10 @@ const SuperHeroesList = (props) => {
 	}, []);
 
   const renderItem = ({ item }) => (
-    <SuperheroCard alterEgo={item.alterEgo} />
+    <SuperheroCard 
+      superHero={item} 
+      navigation={props.navigation}
+    />
   );
 
   return (

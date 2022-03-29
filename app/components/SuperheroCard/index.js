@@ -15,7 +15,7 @@ const SuperheroCard = ({ superHero, navigation }) => {
       style={styles.container}
       onPress={openSuperHeroDetailsScreen}
     >
-      <Text>{superHero.alterEgo}</Text>
+      <Text>{superHero.name} - {superHero.alterEgo}</Text>
     </TouchableOpacity>
   )
   

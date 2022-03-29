@@ -5,9 +5,9 @@ const styles = StyleSheet.create({
     padding: 10
   },
   image: {
-  	width: '100%',
-  	height: 300,
-  	resizeMode: 'center'
+    width: '100%',
+    height: 300,
+    resizeMode: 'center'
   }
 });
 

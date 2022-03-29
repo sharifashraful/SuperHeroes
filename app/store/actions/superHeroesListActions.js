@@ -1,15 +1,15 @@
 import {
-	SUPERHEROES_FETCH,
-	SUPERHEROES_FETCH_START,
-	SUPERHEROES_FETCH_FAILED,
-	SUPERHEROES_FETCH_SUCCESS
+  SUPERHEROES_FETCH,
+  SUPERHEROES_FETCH_START,
+  SUPERHEROES_FETCH_FAILED,
+  SUPERHEROES_FETCH_SUCCESS
 } from './types'
 
 
 export const fetchSuperHeroes = ( ) => {
-	return {
-		type: 'SUPERHEROES_FETCH'	
-	}  
+  return {
+    type: 'SUPERHEROES_FETCH'	
+  }  
 }
 
 

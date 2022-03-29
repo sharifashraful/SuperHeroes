@@ -6,8 +6,8 @@ import Store from './store'
 const App: () => Node = () => {
   
   return (
-  	<Provider store={Store}>
-    	<Navigator />
+    <Provider store={Store}>
+      <Navigator />
     </Provider>
   );
 };

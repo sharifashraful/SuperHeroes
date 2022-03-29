@@ -6,6 +6,6 @@ import { watchFetchSuperHeroes } from './superHeroesSaga';
 
 export default function* rootSaga() {
   yield all([
-  	watchFetchSuperHeroes()
+    watchFetchSuperHeroes()
   ]);
 }

@@ -5,12 +5,12 @@ import { fetchSuperHeroes } from '../../store/actions/superHeroesListActions';
 import SuperheroCard from '../../components/SuperheroCard';
 
 const SuperHeroesList = (props) => {
-	const superHeroesListReducer = useSelector((state) => state.superHeroesListReducer);
-	const { error, loading, superHeroesList } = superHeroesListReducer;
-	const dispatch = useDispatch();
+  const superHeroesListReducer = useSelector((state) => state.superHeroesListReducer);
+  const { error, loading, superHeroesList } = superHeroesListReducer;
+  const dispatch = useDispatch();
 
-	useEffect(() => {
-		const fetchSuperHeroesAction = fetchSuperHeroes();
+  useEffect(() => {
+    const fetchSuperHeroesAction = fetchSuperHeroes();
     dispatch(fetchSuperHeroesAction)
 	}, []);
 

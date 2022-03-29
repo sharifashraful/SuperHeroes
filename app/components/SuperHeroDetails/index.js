@@ -4,31 +4,31 @@ import styles from './styles';
 const SuperHeroDetails = ({ superHero }) => {
  
  
-	return(
-		<View style={styles.container}>
-			<Text>
-				{superHero.name}
-			</Text>
+  return(
+    <View style={styles.container}>
+      <Text>
+        {superHero.name}
+      </Text>
 
-			<Text>
-				{superHero.alterEgo}
-			</Text>
-			<Text>
-				{superHero.description}
-			</Text>
-			<Text>
-				{superHero.alterEgo}
-			</Text>
-			<Text>
-				{superHero.comic}
-			</Text>
+      <Text>
+        {superHero.alterEgo}
+      </Text>
+      <Text>
+        {superHero.description}
+      </Text>
+      <Text>
+        {superHero.alterEgo}
+      </Text>
+      <Text>
+        {superHero.comic}
+      </Text>
 
-			<Image
+      <Image
         style={styles.image}
         source={{uri: superHero.imgUrl}}
       />
-		</View>
-	)
+    </View>
+  )
   
 };
 

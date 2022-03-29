@@ -4,20 +4,20 @@ import styles from './styles';
 
 const SuperheroCard = ({ superHero, navigation }) => {
  
- 	const openSuperHeroDetailsScreen = () => {
+  const openSuperHeroDetailsScreen = () => {
 
- 		navigation.navigate('SuperHeroesDetails', {superHero: superHero})
- 	}
+    navigation.navigate('SuperHeroesDetails', {superHero: superHero})
+  }
 
-	return(
+  return(
 
-		<TouchableOpacity 
-	  	style={styles.container}
-	  	onPress={openSuperHeroDetailsScreen}
-	  >
-	    <Text>{superHero.alterEgo}</Text>
-	  </TouchableOpacity>
-	)
+    <TouchableOpacity 
+      style={styles.container}
+      onPress={openSuperHeroDetailsScreen}
+    >
+      <Text>{superHero.alterEgo}</Text>
+    </TouchableOpacity>
+  )
   
 };
 
